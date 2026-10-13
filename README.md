@@ -4,7 +4,11 @@ Portfólio pessoal de **Bernardo Kim**, estudante de Engenharia de Software na F
 
 Feito com **HTML, CSS e JavaScript puro**, sem frameworks, sem build e sem dependências. Todo o conteúdo editável fica em um único arquivo: `js/config.js`.
 
-🔗 **Site:** _adicione aqui o link depois de publicar_
+<p align="start">
+  <a href="https://sukjoo04.github.io/Portfolio-Bernardo/">
+    <img src="https://img.shields.io/badge/🔗%20Acessar%20o%20portifólio-000000?style=for-the-badge" alt="Acessar o Portifólio">
+  </a>
+</p>
 
 ---
 
