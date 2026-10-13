@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kim's Coffee — Café & Experiências</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- ============================
+       HEADER / NAV
+  ============================= -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-4z"/><path d="M16 11.5h1.2a2.4 2.4 0 0 1 0 4.8H15.6"/><path d="M2.5 21.5h15"/><path d="M8 3.2c-1.2 1.5 1.2 2.6 0 4.3"/><path d="M12 3.2c-1.2 1.5 1.2 2.6 0 4.3"/></svg></span>
+        <span class="logo-text">Kim's <em>Coffee</em></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="#historia" class="nav-link">Nossa História</a>
+        <a href="#avaliacoes" class="nav-link">Avaliações</a>
+        <a href="#localizacao" class="nav-link">Localização</a>
+        <a href="#contato" class="nav-link nav-cta">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+ 
+  <!-- ============================
+       HERO
+  ============================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="./img/coffe-graos.jpg" alt="Café aconchegante" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <p class="hero-eyebrow reveal">Desde 2015 · São Paulo, SP</p>
+      <h1 class="hero-title reveal">Cada xícara conta<br /><em>uma história.</em></h1>
+      <p class="hero-subtitle reveal">Grãos selecionados, preparo artesanal e um ambiente feito para você parar, respirar e saborear o momento.</p>
+      <div class="hero-actions reveal">
+        <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+        <a href="#localizacao" class="btn btn-outline">Como chegar</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       SOBRE (FUNDADOR)
+  ============================= -->
+  <section class="section sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-img-wrap reveal">
+        <img src="./img/foto minha.png" alt="Bernardo, fundador" class="sobre-img" />
+        <div class="sobre-badge">
+          <span class="badge-num">10+</span>
+          <span class="badge-label">anos de café</span>
+        </div>
+      </div>
+      <div class="sobre-text reveal">
+        <p class="section-eyebrow">Conheça o fundador</p>
+        <h2 class="section-title">Bernardo<br /><em>Kim</em></h2>
+        <p>Bernardo cresceu em São Paulo e viajou para a Coréia do Sul onde se apaixonou pelas cafeterias em relação ao sabor marcante e locais aconchegantes.</p>
+        <p>Esteve anos fazendo pesquisas e descobrindo o novo aroma dos ingredientes de qualidade, assim criando sua própria cafeteria o Kim's Coffe.</p>
+        <div class="sobre-stats">
+          <div class="stat">
+            <span class="stat-num">34</span>
+            <span class="stat-label">origens testadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12k+</span>
+            <span class="stat-label">clientes por mês</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3×</span>
+            <span class="stat-label">premiada em SP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       CARDÁPIO
+  ============================= -->
+  <section class="section cardapio" id="cardapio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">O que preparamos</p>
+        <h2 class="section-title">Nosso <em>Cardápio</em></h2>
+        <p class="section-desc">Todos os cafés são preparados com grãos specialty torrados semanalmente. Bebidas vegetais disponíveis sem custo adicional.</p>
+      </div>
+ 
+      <div class="cardapio-tabs reveal">
+        <button class="tab-btn active" data-tab="cafes">Cafés</button>
+        <button class="tab-btn" data-tab="doces">Doces</button>
+        <button class="tab-btn" data-tab="frios">Frios</button>
+      </div>
+ 
+      <div class="cardapio-grid" id="cardapio-grid">
+ 
+        <!-- Cafés -->
+        <div class="card-item" data-cat="cafes">
+          <div class="card-img-wrap">
+            <img src="./img/cafe4.jpg" alt="Espresso" />
+            <span class="card-tag">Clássico</span>
+          </div>
+          <div class="card-info">
+            <h3>Espresso Signature</h3>
+            <p>Blend exclusivo da casa com notas de chocolate amargo e amêndoa. Extraído em 28 segundos no ponto exato.</p>
+            <div class="card-footer">
+              <span class="price">R$ 9</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="cafes">
+          <div class="card-img-wrap">
+            <img src="./img/cafe1.jpg" alt="Cappuccino" />
+            <span class="card-tag">Favorito</span>
+          </div>
+          <div class="card-info">
+            <h3>Cappuccino Artesanal</h3>
+            <p>Espresso duplo com leite vaporizado em microespuma sedosa e uma camada de canela srilankesa.</p>
+            <div class="card-footer">
+              <span class="price">R$ 16</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="cafes">
+          <div class="card-img-wrap">
+            <img src="./img/cafe-despejando.jpg" alt="Café filtrado" />
+          </div>
+          <div class="card-info">
+            <h3>Pour Over Sazonal</h3>
+            <p>Método manual com grão de origem única, variando conforme a safra. Perfil limpo e floral.</p>
+            <div class="card-footer">
+              <span class="price">R$ 18</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="cafes">
+          <div class="card-img-wrap">
+            <img src="./img/caffe latte hot.jpg" alt="Latte" />
+            <span class="card-tag">Novidade</span>
+          </div>
+          <div class="card-info">
+            <h3>Brown Sugar Latte</h3>
+            <p>Espresso com xarope de açúcar mascavo, leite vaporizado e uma pitada de flor de sal da Guérande.</p>
+            <div class="card-footer">
+              <span class="price">R$ 20</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Doces -->
+        <div class="card-item" data-cat="doces">
+          <div class="card-img-wrap">
+            <img src="./img/croissant.jpg" alt="Croissant" />
+            <span class="card-tag">Fresco</span>
+          </div>
+          <div class="card-info">
+            <h3>Croissant de Manteiga</h3>
+            <p>Folhado com manteiga francesa, assado toda manhã. Crocante por fora, macio por dentro.</p>
+            <div class="card-footer">
+              <span class="price">R$ 14</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="doces">
+          <div class="card-img-wrap">
+            <img src="./img/brownie.jpg" alt="Brownie" />
+          </div>
+          <div class="card-info">
+            <h3>Brownie de Cacau 70%</h3>
+            <p>Brownie úmido e denso com pedaços de chocolate belga. Vai bem com qualquer preparo da casa.</p>
+            <div class="card-footer">
+              <span class="price">R$ 16</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="doces">
+          <div class="card-img-wrap">
+            <img src="./img/banana cake.jpg" alt="Bolo de banana" />
+            <span class="card-tag">Caseiro</span>
+          </div>
+          <div class="card-info">
+            <h3>Bolo de Banana e Canela</h3>
+            <p>Receita da avó do Kim. Banana-prata madura, canela do Ceilão e crosta de açúcar cristal.</p>
+            <div class="card-footer">
+              <span class="price">R$ 14</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="doces">
+          <div class="card-img-wrap">
+            <img src="./img/cookie.jpg" alt="Cookie" />
+          </div>
+          <div class="card-info">
+            <h3>Cookie de Gotas (ao Leite)</h3>
+            <p>Textura entre crocante e mastigável, com gotas de chocolate ao leite e flor de sal.</p>
+            <div class="card-footer">
+              <span class="price">R$ 10</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Frios -->
+        <div class="card-item" data-cat="frios">
+          <div class="card-img-wrap">
+            <img src="./img/cold brew.jpg" alt="Cold Brew" />
+            <span class="card-tag">Refrescante</span>
+          </div>
+          <div class="card-info">
+            <h3>Cold Brew 18h</h3>
+            <p>Extração a frio por 18 horas. Suave, encorpado e naturalmente doce. Sem açúcar adicionado.</p>
+            <div class="card-footer">
+              <span class="price">R$ 18</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="frios">
+          <div class="card-img-wrap">
+            <img src="./img/caffe latte.jpg" alt="Ice Latte" />
+          </div>
+          <div class="card-info">
+            <h3>Iced Caramel Latte</h3>
+            <p>Espresso sobre gelo com leite fresco e caramelo artesanal sem corantes. Refrescante e equilibrado.</p>
+            <div class="card-footer">
+              <span class="price">R$ 22</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="frios">
+          <div class="card-img-wrap">
+            <img src="./img/matcha ice.jpg" alt="Matcha" />
+            <span class="card-tag">Sem café</span>
+          </div>
+          <div class="card-info">
+            <h3>Iced Matcha Latte</h3>
+            <p>Matcha ceremonial japonês com leite de aveia gelado. Vibrante, cremoso e levemente adocicado.</p>
+            <div class="card-footer">
+              <span class="price">R$ 24</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="card-item" data-cat="frios">
+          <div class="card-img-wrap">
+            <img src="./img/coffe lemonade.jpg" alt="Limonada" />
+          </div>
+          <div class="card-info">
+            <h3>Limonada Espresso</h3>
+            <p>Suco de limão tahiti fresco com shot de espresso e água com gás. Inesperadamente harmonioso.</p>
+            <div class="card-footer">
+              <span class="price">R$ 20</span>
+              <button class="btn-sm">Pedir</button>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       HISTÓRIA DO ESTABELECIMENTO
+  ============================= -->
+  <section class="section historia" id="historia">
+    <div class="container historia-grid">
+      <div class="historia-text reveal">
+        <p class="section-eyebrow">Nossa história</p>
+        <h2 class="section-title">Um café nascido<br /><em>de uma paixão.</em></h2>
+        <p>A Kim's Coffee abriu suas portas em março de 2015, numa pequena sala de 40 m² na Vila Madalena. A proposta era simples: servir cafés de verdade num ambiente que respeitasse quem precisa de uma pausa no dia.</p>
+        <p>Em 2018, crescemos para o espaço atual, mais amplo, com varanda e uma pequena biblioteca. Em 2021 lançamos nossa linha de grãos para assinatura — e hoje somos referência em specialty coffee no bairro.</p>
+        <p>Cada detalhe do espaço foi escolhido com intenção: a madeira de demolição das prateleiras, o azulejo artesanal de Tracunhaém e o som ambiente que nunca fica alto demais para uma conversa boa.</p>
+      </div>
+      <div class="historia-timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-year">2015</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>Abertura na Vila Madalena</strong>
+            <p>Primeiro espaço de 40 m², 4 mesas e um sonho grande.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2017</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>Primeiro prêmio</strong>
+            <p>Melhor café specialty de SP pela revista Paladar.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2018</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>Novo espaço</strong>
+            <p>Expansão para 120 m² com varanda e biblioteca.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2021</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>Assinatura de grãos</strong>
+            <p>Lançamento do clube com entrega mensal para toda SP.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2025</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>10 anos de cafés</strong>
+            <p>Uma década de xícaras, histórias e conexões reais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       AVALIAÇÕES
+  ============================= -->
+  <section class="section avaliacoes" id="avaliacoes">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">O que dizem sobre nós</p>
+        <h2 class="section-title">Avaliações <em>reais</em></h2>
+        <div class="rating-summary">
+          <span class="big-score">4.9</span>
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>baseado em 1.240 avaliações</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="reviews-grid reveal">
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">AM</div>
+            <div>
+              <strong>Ana Martins</strong>
+              <p>São Paulo · Designer</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Meu ritual de manhã é passar na Kim's antes do trabalho. O Brown Sugar Latte é transcendental. O ambiente é silencioso do jeito certo e os baristas realmente conhecem café."</p>
+          <span class="review-date">Junho 2025</span>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">RC</div>
+            <div>
+              <strong>Rafael Correia</strong>
+              <p>Campinas · Engenheiro</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Vim a SP a trabalho e um amigo indicou. Fiquei duas horas trabalhando aqui sem perceber. O Pour Over sazononal estava complexo e delicioso. Voltarei na próxima viagem."</p>
+          <span class="review-date">Maio 2025</span>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">JP</div>
+            <div>
+              <strong>Juliana Prado</strong>
+              <p>São Paulo · Professora</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Assino os grãos há dois anos e é a melhor decisão que tomei. A curadoria muda todo mês e aprendi muito sobre origens por causa disso. Bolo de banana impecável também!"</p>
+          <span class="review-date">Abril 2025</span>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">TS</div>
+            <div>
+              <strong>Thiago Silva</strong>
+              <p>São Paulo · Fotógrafo</p>
+            </div>
+            <div class="review-stars">★★★★☆</div>
+          </div>
+          <p class="review-text">"Atendimento caloroso, espaço lindo e fotogênico. O espresso está sempre no ponto. Única sugestão: abrir mais cedo nos fins de semana, às vezes a fila já é grande antes das 9h."</p>
+          <span class="review-date">Março 2025</span>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">LC</div>
+            <div>
+              <strong>Laura Costa</strong>
+              <p>São Paulo · Nutricionista</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Como nutricionista, valorizo muito a transparência com os ingredientes. Aqui tudo é informado, não tem mistério. O Iced Matcha é de longe o melhor que já tomei fora do Japão."</p>
+          <span class="review-date">Fevereiro 2025</span>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">MF</div>
+            <div>
+              <strong>Marcos Figueiredo</strong>
+              <p>São Paulo · Arquiteto</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"O projeto do espaço me encanta toda vez. Funcional, com personalidade e nenhum elemento desnecessário. O café é à altura: preciso e sem excessos. Exatamente o que procuro."</p>
+          <span class="review-date">Janeiro 2025</span>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       LOCALIZAÇÃO
+  ============================= -->
+  <section class="section localizacao" id="localizacao">
+    <div class="container localizacao-grid">
+      <div class="localizacao-info reveal">
+        <p class="section-eyebrow">Onde estamos</p>
+        <h2 class="section-title">Venha nos <em>visitar</em></h2>
+ 
+        <div class="info-block">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.5s-6.5-5.4-6.5-10.8a6.5 6.5 0 0 1 13 0C18.5 16.100 12 21.500 12 21.500z"/><circle cx="12" cy="10.5" r="2.3"/></svg></span>
+          <div>
+            <strong>Endereço</strong>
+            <p>Rua Girassol, 487 — Vila Madalena<br />São Paulo, SP · CEP 05433-002</p>
+          </div>
+        </div>
+ 
+        <div class="info-block">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.3 2"/></svg></span>
+          <div>
+            <strong>Horários</strong>
+            <p>Seg–Sex: 7h às 20h<br />Sáb–Dom: 8h às 21h</p>
+          </div>
+        </div>
+ 
+        <div class="info-block">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8.500a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6z"/><path d="M5 11h14"/><path d="M8.500 17.500 6.500 21.500M15.500 17.500l2 4"/><circle cx="9" cy="14.200" r=".4"/><circle cx="15" cy="14.200" r=".4"/></svg></span>
+          <div>
+            <strong>Como chegar</strong>
+            <p>Metro Vila Madalena (Linha 2 — Verde)<br />Estacionamento rotativo na rua</p>
+          </div>
+        </div>
+ 
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Girassol,+487,+Vila+Madalena,+S%C3%A3o+Paulo,+SP,+05433-002" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.5rem">Abrir no Google Maps</a>
+      </div>
+ 
+      <div class="localizacao-map reveal">
+        <iframe
+          class="map-img"
+          title="Localização Kim's Coffee no Google Maps"
+          src="https://maps.google.com/maps?q=Rua+Girassol,+487,+Vila+Madalena,+S%C3%A3o+Paulo,+SP,+05433-002&hl=pt-BR&z=17&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       CONTATO
+  ============================= -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Fale conosco</p>
+        <h2 class="section-title">Entre em <em>contato</em></h2>
+        <p class="section-desc">Reservas, eventos, parcerias ou só um oi — estamos por aqui.</p>
+      </div>
+ 
+      <div class="contato-grid reveal">
+ 
+        <a href="tel:+5511945678901" class="contato-card">
+          <div class="contato-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.500h3.500l1.800 4.800-2.300 1.500a12 12 0 0 0 5.700 5.700l1.500-2.300 4.800 1.800V18.500a2 2 0 0 1-2.200 2A16.500 16.500 0 0 1 3 5.700a2 2 0 0 1 2-2.200z"/></svg></div>
+          <h3>Telefone</h3>
+          <p>(11) 94567-8901</p>
+          <span>WhatsApp disponível</span>
+        </a>
+ 
+        <a href="https://instagram.com/kimscoffeesp" target="_blank" class="contato-card">
+          <div class="contato-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.300" cy="6.700" r=".5"/></svg></div>
+          <h3>Instagram</h3>
+          <p>@kimscoffeesp</p>
+          <span>Siga para novidades</span>
+        </a>
+ 
+        <a href="mailto:oi@kimscoffee.com.br" class="contato-card">
+          <div class="contato-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="m3.500 7.500 8.500 6 8.500-6"/></svg></div>
+          <h3>E-mail</h3>
+          <p>oi@kimscoffee.com.br</p>
+          <span>Respondemos em até 24h</span>
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-4z"/><path d="M16 11.5h1.2a2.4 2.4 0 0 1 0 4.8H15.6"/><path d="M2.5 21.5h15"/><path d="M8 3.2c-1.2 1.5 1.2 2.6 0 4.3"/><path d="M12 3.2c-1.2 1.5 1.2 2.6 0 4.3"/></svg></span>
+        <span class="logo-text">Kim's <em>Coffee</em></span>
+        <p>Café specialty na Vila Madalena desde 2015.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#historia">História</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2025 Kim's Coffee · Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

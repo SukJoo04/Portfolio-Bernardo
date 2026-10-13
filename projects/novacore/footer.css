@@ -1,0 +1,87 @@
+footer {
+    background-color: #14111c;
+    color: #ffffff;
+    padding: 50px 60px 0 60px;
+}
+ 
+.footer-topo {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+ 
+.logo__anel--grande {
+    width: 32px;
+    height: 32px;
+}
+ 
+.footer-topo h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 0 40px 40px;
+    text-align: center;
+}
+ 
+.footer-column h4 {
+    color: var(--cor-destaque);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+ 
+.footer-column ul {
+    list-style: none;
+}
+ 
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+ 
+.footer-column ul li a {
+    color: var(--cor-texto-suave);
+    font-size: 9px;
+    transition: color 0.2s ease;
+}
+ 
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+ 
+.footer-column .contato-info p {
+    font-size: 9px;
+    line-height: 2;
+    color: var(--cor-texto-suave);
+}
+ 
+.footer-direitos {
+    border-top: 1px solid #2a2438;
+    padding: 28px 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 9px;
+    color: var(--cor-texto-suave);
+}
+ 
+@media (max-width: 600px) {
+    footer {
+        padding: 40px 20px 0;
+    }
+ 
+    .footer-grid {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 0 0 30px;
+    }
+}

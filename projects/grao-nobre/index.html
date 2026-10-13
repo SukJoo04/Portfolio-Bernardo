@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grão Nobre</title>
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+ 
+<body class="bg-gray-50 text-gray-800">
+ 
+  <nav class="bg-gray-900 text-white px-6 py-3 flex items-center justify-between">
+    <a href="#inicio" class="text-lg font-bold">Grão<span class="text-amber-700">Nobre</span></a>
+    <ul class="flex items-center gap-4 text-sm">
+      <li><a class="text-gray-300 hover:text-white" href="#inicio">Início</a></li>
+      <li><a class="text-gray-300 hover:text-white" href="#depoimentos">Depoimentos</a></li>
+      <li><a class="text-gray-300 hover:text-white" href="#faq">FAQ</a></li>
+      <li>
+        <button type="button" popovertarget="modal" class="bg-amber-800 hover:bg-amber-900 text-white text-xs px-2.5 py-1.5 rounded cursor-pointer">
+          Comprar agora
+        </button>
+      </li>
+    </ul>
+  </nav>
+ 
+  <section id="inicio" class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-5xl font-bold leading-tight mb-3">Café de origem, torrado com propósito.</h1>
+      <p class="text-gray-600 text-lg">
+        A Grão Nobre trabalha direto com pequenos produtores para levar até você grãos especiais, torrados em lotes pequenos toda semana.
+      </p>
+    </div>
+    <div class="h-72 md:h-76 rounded-lg bg-linear-to-br from-[#e8dcc8] to-[#c9a574] flex items-center justify-center">
+      <span class="text-xs font-bold text-gray-600">IMAGEM HERO</span>
+    </div>
+  </section>
+ 
+  <section id="depoimentos" class="bg-white py-12 px-6">
+    <div class="text-center">
+      <p class="text-xs font-bold uppercase text-amber-800">Quem já experimentou</p>
+      <h2 class="text-2xl font-bold">O que dizem nossos clientes</h2>
+    </div>
+ 
+    <div class="group max-w-5xl mx-auto mt-10">
+      <input type="radio" name="slide" id="s1" class="hidden" checked>
+      <input type="radio" name="slide" id="s2" class="hidden">
+      <input type="radio" name="slide" id="s3" class="hidden">
+ 
+      <div class="hidden group-has-[#s1:checked]:flex items-center justify-between gap-4">
+        <label for="s3" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-left"></i></label>
+        <div class="text-center max-w-md">
+          <div class="text-yellow-400 text-xs tracking-widest mb-3">★★★★★</div>
+          <p class="italic mb-4">"Melhor café que já experimentei recomendo."</p>
+          <div class="flex items-center justify-center gap-2.5">
+            <div class="w-7 h-7 rounded-full bg-linear-to-br from-[#c9a574] to-[#8b5a2b]"></div>
+            <div class="text-left leading-tight">
+              <p class="text-sm font-bold">Leonardo Daniel</p>
+              <p class="text-xs text-gray-500">Assinante desde 2023</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-1.5 mt-5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-800"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+          </div>
+        </div>
+        <label for="s2" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-right"></i></label>
+      </div>
+ 
+      <div class="hidden group-has-[#s2:checked]:flex items-center justify-between gap-4">
+        <label for="s1" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-left"></i></label>
+        <div class="text-center max-w-md">
+          <div class="text-yellow-400 text-xs tracking-widest mb-3">★★★★★</div>
+          <p class="italic mb-4">"Aroma incrível e sabor marcante."</p>
+          <div class="flex items-center justify-center gap-2.5">
+            <div class="w-7 h-7 rounded-full bg-linear-to-br from-[#c9a574] to-[#8b5a2b]"></div>
+            <div class="text-left leading-tight">
+              <p class="text-sm font-bold">Matheus Tamataya</p>
+              <p class="text-xs text-gray-500">Assinante desde 2024</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-1.5 mt-5">
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-800"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+          </div>
+        </div>
+        <label for="s3" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-right"></i></label>
+      </div>
+ 
+      <div class="hidden group-has-[#s3:checked]:flex items-center justify-between gap-4">
+        <label for="s2" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-left"></i></label>
+        <div class="text-center max-w-md">
+          <div class="text-yellow-400 text-xs tracking-widest mb-3">★★★★★</div>
+          <p class="italic mb-4">"Atendimento incrivel e com entrega dentro do prazo."</p>
+          <div class="flex items-center justify-center gap-2.5">
+            <div class="w-7 h-7 rounded-full bg-linear-to-br from-[#c9a574] to-[#8b5a2b]"></div>
+            <div class="text-left leading-tight">
+              <p class="text-sm font-bold">Vinycius Lu</p>
+              <p class="text-xs text-gray-500">Assinante desde 2022</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-1.5 mt-5">
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-800"></span>
+          </div>
+        </div>
+        <label for="s1" class="text-gray-500 hover:text-gray-900 text-3xl cursor-pointer"><i class="bx bx-chevron-right"></i></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="faq" class="py-12 px-6">
+    <h2 class="text-2xl font-bold text-center mb-6">Perguntas frequentes</h2>
+ 
+    <div class="max-w-3xl mx-auto bg-white border border-gray-200 rounded-md overflow-hidden text-sm">
+      <details name="faq" class="group">
+        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between px-3.5 py-3 cursor-pointer group-open:bg-blue-100 group-open:text-blue-900">
+          Qual a validade do café após aberto?
+          <i class="bx bx-chevron-down text-xl transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="px-3.5 py-3 border-t border-gray-200">
+          O café mantém suas melhores características por até 30 dias após aberto, se guardado em local fresco e bem vedado.
+        </p>
+      </details>
+ 
+      <details name="faq" class="group" open>
+        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between px-3.5 py-3 cursor-pointer group-open:bg-blue-100 group-open:text-blue-900">
+          Vocês entregam para todo o Brasil?
+          <i class="bx bx-chevron-down text-xl transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="px-3.5 py-3 border-t border-gray-200">
+          Sim! Enviamos para todas as regiões, com prazo médio de 3 a 7 dias úteis dependendo da localidade.
+        </p>
+      </details>
+ 
+      <details name="faq" class="group">
+        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between px-3.5 py-3 cursor-pointer group-open:bg-blue-100 group-open:text-blue-900">
+          Posso cancelar minha assinatura quando quiser?
+          <i class="bx bx-chevron-down text-xl transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="px-3.5 py-3 border-t border-gray-200">
+          Pode sim. O cancelamento é livre, sem multa, e pode ser feito a qualquer momento.
+        </p>
+      </details>
+    </div>
+  </section>
+ 
+  <footer class="bg-gray-900 text-gray-400 text-xs text-center py-5">
+    © 2026 Grão Nobre. Marca fictícia criada para fins didáticos.
+  </footer>
+ 
+  <div id="modal" popover class="m-0 mx-auto mt-6 mb-auto p-0 border-0 bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden w-[calc(100%-2rem)] max-w-125 backdrop:bg-black/50">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+      <h3 class="text-lg">Faça seu pedido:</h3>
+      <button type="button" popovertarget="modal" popovertargetaction="hide" class="text-gray-500 hover:text-gray-900 text-3xl leading-none cursor-pointer">
+        <i class="bx bx-x"></i>
+      </button>
+    </div>
+ 
+    <div class="px-4 py-4 flex flex-col gap-4">
+      <label class="flex items-center gap-1.5 cursor-pointer"><input type="checkbox" class="w-4 h-4"> Kit de degustação</label>
+      <label class="flex items-center gap-1.5 cursor-pointer"><input type="checkbox" class="w-4 h-4"> 1 pacote de 250g</label>
+      <label class="flex items-center gap-1.5 cursor-pointer"><input type="checkbox" class="w-4 h-4"> 5 pacotes de 250g</label>
+    </div>
+ 
+    <div class="flex justify-end px-4 py-4 border-t border-gray-200">
+      <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md cursor-pointer">Ir para o carrinho</button>
+    </div>
+  </div>
+ 
+</body>
+</html>

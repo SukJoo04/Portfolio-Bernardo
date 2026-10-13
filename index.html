@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bernardo Kim — Software Engineer</title>
+  <meta name="description" content="Portfólio de Bernardo Kim, Software Engineer. Projetos, habilidades técnicas e contato." />
+  <meta name="theme-color" content="#0a0d14" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bernardo Kim — Software Engineer" />
+  <meta property="og:description" content="Transformando ideias em soluções digitais eficientes, elegantes e escaláveis." />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas id="net-canvas" aria-hidden="true"></canvas>
+  <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo mono" aria-label="SukJu.dev — início"><span class="br">&lt;</span>SukJu.dev<span class="br">&gt;</span></a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre" data-section="sobre">Sobre mim</a></li>
+          <li><a href="#projetos" data-section="projetos">Projetos</a></li>
+          <li><a href="#equipe" data-section="equipe">Equipe</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li><a href="#contato" data-section="contato">Contato</a></li>
+          <li><a href="#curriculo" data-section="curriculo">Currículo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="inicio" data-section="inicio" aria-labelledby="hero-name">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="status-chip reveal"><span class="dot"></span><span class="mono">disponível para conversar</span></p>
+          <p class="mono hero__prompt reveal">&gt; hello_world<span class="caret"></span></p>
+          <h1 id="hero-name" class="hero__name reveal" data-hero="name">BERNARDO KIM</h1>
+          <p class="hero__title reveal" data-hero="title">Software Engineer</p>
+          <p class="hero__tagline reveal" data-hero="tagline"></p>
+          <p class="hero__typing reveal mono" aria-hidden="true"><span id="typing-text"></span><span class="caret"></span></p>
+          <p class="hero__desc reveal" data-hero="desc"></p>
+
+          <div class="hero__actions reveal">
+            <a href="#projetos" class="btn btn--primary">Explorar projetos
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="documents/curriculo-bernardo-suk-ju-kim.pdf" class="btn btn--ghost js-resume-download" download="Bernardo_Suk_Ju_Kim_CV.pdf">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+              Baixar currículo PDF
+            </a>
+          </div>
+          <p class="resume-msg mono" role="status" aria-live="polite" data-resume-msg></p>
+        </div>
+
+        <div class="hero__photo reveal">
+          <figure class="photo-frame" id="photo-frame">
+            <img id="profile-img" src="assets/images/bernardo-profile.jpg" alt="Foto profissional de Bernardo Kim" width="600" height="800" decoding="async" />
+            <div class="photo-placeholder" id="photo-placeholder" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+              <p class="mono">Substitua esta imagem</p>
+              <p class="mono small">assets/images/bernardo-profile.jpg</p>
+            </div>
+            <span class="corner corner--tl"></span><span class="corner corner--br"></span>
+          </figure>
+          <div class="sys-badges mono" aria-hidden="true">
+            <span>[ build: stable ]</span><span>[ ui: online ]</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a próxima seção">
+        <span class="mono">scroll</span><span class="scroll-hint__line"></span>
+      </a>
+    </section>
+
+    <section class="section" id="sobre" data-section="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow mono">// 01 — sobre</p>
+          <h2 id="sobre-title">Sobre mim</h2>
+          <p class="section__lead" id="about-intro"></p>
+        </header>
+        <div class="grid grid--3" id="about-grid"></div>
+
+        <div class="timeline-wrap">
+          <div class="reveal">
+            <h3 class="timeline-title mono">// experiência</h3>
+            <ol class="timeline" id="exp-list"></ol>
+          </div>
+          <div class="reveal">
+            <h3 class="timeline-title mono">// formação</h3>
+            <ol class="timeline" id="edu-list"></ol>
+          </div>
+        </div>
+
+        <div class="terminal reveal" aria-hidden="true">
+          <div class="terminal__bar"><i></i><i></i><i></i><span class="mono">terminal — decorativo</span></div>
+          <div class="terminal__body mono" id="terminal-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos" data-section="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow mono">// 02 — projetos</p>
+          <h2 id="projetos-title">Projetos</h2>
+          <p class="section__lead">Uma seleção de trabalhos. Clique em um card para ver mais detalhes.</p>
+        </header>
+        <div class="grid grid--3" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="equipe" data-section="equipe" aria-labelledby="equipe-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow mono">// 03 — equipe</p>
+          <h2 id="equipe-title">Projetos em equipe</h2>
+          <p class="section__lead" id="team-lead"></p>
+        </header>
+        <ul class="members reveal" id="team-members" aria-label="Integrantes da equipe"></ul>
+        <div class="grid grid--3" id="team-projects"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-section="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow mono">// 04 — skills</p>
+          <h2 id="skills-title">Skills</h2>
+          <p class="section__lead">Tecnologias organizadas por categoria.</p>
+        </header>
+        <div class="grid grid--3" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contato" data-section="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow mono">// 05 — contato</p>
+          <h2 id="contato-title">Contato</h2>
+          <p class="section__lead">Vamos conversar sobre um projeto, oportunidade ou ideia.</p>
+        </header>
+
+        <div class="contact">
+          <ul class="contact__links reveal" id="contact-links" aria-label="Canais de contato"></ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="curriculo" data-section="curriculo" aria-labelledby="curriculo-title">
+      <div class="container">
+        <div class="resume-card reveal">
+          <div>
+            <p class="eyebrow mono">// 06 — currículo</p>
+            <h2 id="curriculo-title">Currículo</h2>
+            <p class="section__lead">Baixe meu currículo em PDF.</p>
+          </div>
+          <div class="resume-card__action">
+            <a href="documents/curriculo-bernardo-suk-ju-kim.pdf" class="btn btn--primary btn--lg js-resume-download" download="Bernardo_Suk_Ju_Kim_CV.pdf">
+              <svg class="icon icon--dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+              <span data-resume-label>Baixar meu currículo (PDF)</span>
+            </a>
+            <p class="resume-msg mono" role="status" aria-live="polite" data-resume-msg></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="mono">&copy; <span id="year"></span> <span data-footer-name>Bernardo Kim</span></p>
+      <a href="#inicio" class="mono footer__top">voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal__close" data-close aria-label="Fechar">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-details" class="muted"></p>
+      <ul class="tags" id="modal-tags"></ul>
+      <div class="card__actions" id="modal-actions"></div>
+    </div>
+  </div>
+
+  <noscript><p style="padding:2rem;text-align:center">Este portfólio precisa de JavaScript para exibir o conteúdo.</p></noscript>
+
+  <script src="js/config.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

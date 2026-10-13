@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte-primaria: "Poppins", sans-serif;
+    --cor-hero: #3d2563;
+    --cor-fundo-principal: #0b0a10;
+    --cor-fundo-alternativo: #261e3a;
+    --cor-card: #2d2542;
+    --cor-destaque: #a855d8;
+    --cor-destaque-hover: #8d3fc0;
+    --cor-texto: #ffffff;
+    --cor-texto-suave: #c3bbd3;
+    --cor-borda: #4a3a6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo__anel {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.logo__texto {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+}
+
+.menu a {
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: var(--cor-destaque);
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor-destaque-hover);
+}
+
+.secao__titulo {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 640px;
+    margin: 0 auto 50px;
+}
+
+.rotulo {
+    color: var(--cor-destaque);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.secao__titulo h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.secao__titulo p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--cor-texto-suave);
+}
+
+.card {
+    background-color: var(--cor-card);
+    border-radius: 14px;
+    padding: 28px 24px;
+}
+
+.card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--cor-texto-suave);
+}
